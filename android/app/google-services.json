@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "866795119001",
+    "project_id": "gapmarket-9ec13",
+    "storage_bucket": "gapmarket-9ec13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866795119001:android:deb94ec5fdb73fb532f308",
+        "android_client_info": {
+          "package_name": "com.lvher.kei.gap_market"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866795119001-9hat1l7gmu0ok7one62sqh794m94ml6j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lvher.kei.gap_market",
+            "certificate_hash": "27005e8227c4db10f4e47ee64c6d1f3394fdf537"
+          }
+        },
+        {
+          "client_id": "866795119001-n7r47iastf49i2i6iuing3fu2t9s8sdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0BYMA6zaElrp1vLy_VFxmT8h4SJdewKQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866795119001-n7r47iastf49i2i6iuing3fu2t9s8sdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
