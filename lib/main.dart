@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:gap_market/authentification/widget_tree.dart';
 import 'package:gap_market/sub/major.dart';
 import 'package:gap_market/sub/mine.dart';
 import 'package:gap_market/sub/subject.dart';
 import 'package:gap_market/sub/whole.dart';
-void main() {
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase/firebase_options.dart';
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    name: "gap_market1",
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -35,7 +45,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MainPage(),
+      home: const WidgetTree(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -50,6 +60,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin{
   int _selectedIndex = 0;
+  User? user = Auth().currentUser;
   @override
   void initState() {
     super.initState();
@@ -76,6 +87,14 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(child: Text(''))
+          ],
+        ),
+      ),
       appBar: AppBar(
 
       ),

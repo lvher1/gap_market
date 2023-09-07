@@ -10,11 +10,19 @@ class Signup extends StatefulWidget {
 class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(appBar: AppBar(title: Text('first')),
       body: Container(
+
         child: Center(
           child: Column(
+            children: <Widget>[
+              SizedBox(
 
+              ),
+              SizedBox(
+
+              )
+            ],
           ),
         ),
       ),

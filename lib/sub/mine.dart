@@ -14,6 +14,7 @@ class _MineState extends State<Mine> {
 
   @override
   Widget build(BuildContext context) {
+
     return PageView(
       controller: controller,
       children: [
